@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Roboto", sans-serif;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #3C2A20;
+    height:50px;
+    align-items:center;
+    position: sticky;
+    top:0;
+}
+.links a{
+    color:white;
+    text-decoration: none;
+    margin:15px;
+
+}
+a:hover{
+    color:black;
+}
+.links {
+    margin:200px;
+}
+.search{
+    margin-right: 60px;
+}
+
+.search input{
+    padding:6px;
+    border-radius: 3px;
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight:700;
+    text-align: right;
+    width:180px;
+}
+
+.search button{
+    background-color: #AF926A;
+    color:white;
+    padding:6px;
+    outline: none;
+    border: 1px solid #AF926A;
+    border-radius: 3px;
+
+}
+.home{
+    background-image: url("coffee01.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    height:60vh;
+    background-size: cover;
+    padding:100px 100px;
+}
+.home h1{
+    color:white;
+    font-size:100px;
+
+}
+.home h2{
+    color:white;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+.home p{
+    color:white;
+    margin-bottom:25px;
+    font-size: 15px;
+}
+.home button{
+    background-color: #AE926A;
+    color:white;
+    padding:5px;
+    border:1px solid #AE926A;
+    border-radius:3px;
+}
+.type {
+    display:flex;
+    background-color: white;
+    padding: 30px;
+    margin:0px 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width:300px;
+    margin: 30px;
+    border-radius: 3px;
+    box-shadow:0 3px 5px;
+    transition:1s;
+}
+.card:hover{
+    transform: scale(1.2);
+    
+}
+.card img {
+    width:100%;
+    height:0 auto;
+    display:block;
+}
+.label {
+    padding:10px;
+    background-color:rgb(192, 159, 111);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.menubar{
+    display: none;
+    font-size: 30px;
+    color:rgb(192, 159, 111);
+    margin:20px;
+
+}
+@media(max-width:1200px){
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .links{
+        margin:0 auto;
+    }
+    .links a{
+        margin:5px;
+    }
+    .search input{
+        width:100px;
+        padding:5px;
+    }
+    .search{
+        margin:15px;
+    }
+    .type{
+       margin:0 auto;
+    }
+}
+@media(max-width:530px){
+    .links{
+        display: none;
+    }
+    .menubar{
+        display: block;
+    }
+    .home h1{
+        font-size: 70px;
+    }
+    .home h2{
+        font-size: 20px;
+    }
+    .home p{
+        font-size: 13px;
+    }
+    .home{
+        padding:70px 30px;
+    }
+    .card{
+        width:200px;
+    }
+    .type{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
